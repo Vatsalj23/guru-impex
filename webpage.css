@@ -1,0 +1,445 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.646),rgba(0, 0, 0, 0.646)), url(backgroundimg.jpg); 
+    background-size: cover;
+    /* animation: back 30s infinite; */
+    /* animation-timing-function: linear; */
+    position: relative;
+    background-position: center;
+    padding: auto;
+    user-select: none;
+}
+
+/* @keyframes back {
+    100%{
+        background-position:  -3062px 0 ;
+    }
+} */
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.311);
+    justify-content: space-between;
+    position: fixed; 
+    backdrop-filter: blur(3px);
+
+}
+
+.line{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    font-family: calibri;
+    /* display: flex; */
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.line h1{
+    font-size: 65px;
+    margin-top: 50px ;
+    font-family: 'wallpoet';
+
+}
+.line p{
+    font-size: 18px;
+    margin: 15px auto;
+    font-weight: 100;
+    line-height: 20px;
+    gap: 2px;
+    line-height: 23px;
+}
+
+
+.logo{
+    font-family: 'wallpoet';
+    text-decoration: none;
+    color: rgb(192, 208, 232);
+    margin-left: 40px;
+    font-size: 35px;
+}
+.navbar ul{
+    margin-right: 15%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:  rgb(192, 208, 232);
+    font-size: large;
+    
+}
+
+.font:hover {
+    border-bottom: 2px solid white;
+    color: rgb(255, 255, 255);
+    /* padding: 5px; */
+    padding-bottom: 5px;
+    /* font-size: 18px; */
+    transition: 0.3s ease;
+}
+button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+.rmore{
+    color: #fff;
+}
+
+button:hover{
+    background-color: #fff;
+    color: rgb(72, 72, 114);
+    transition: 0.4s ease;
+}
+
+.ddcontent {
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 5px 10px 0px rgba(165, 165, 165, 0.251);
+    transition: all 0.3s;
+    
+    
+}
+.scrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.769), rgba(0, 0, 0, 0.765)), url(readmorebackground.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    overflow-y: scroll;
+    padding: auto;
+    user-select: none;
+    overflow: hidden;
+}
+
+
+.ddcontent a{
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    /* position: relative; */
+    /* background-color: #fff; */
+}
+
+.dropdown:hover .ddcontent{
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.809);
+}
+
+
+.ddcontent a:hover {
+    /* background-color: rgba(255, 255, 255, 0.301); */
+    box-shadow: 0 0 10px 0 rgb(89, 32, 181);
+    color: #000;
+}
+.ddcontent a:nth-child(1):hover{
+    color:skyblue ;
+}
+.ddcontent a:nth-child(2):hover{
+    color: rgba(255, 192, 203, 0.612);
+}
+.ddcontent a:nth-child(3):hover{
+    color: green;
+}
+.ddcontent a:nth-child(4):hover{
+    color: rgba(255, 255, 0, 0.614);
+}
+.ddcontent a:nth-child(5):hover{
+    color: rgba(255, 0, 0, 0.603);
+}
+
+
+
+
+.map {
+    margin-top: 8%;
+    margin-left: 59%;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    border-radius: 40px;
+}
+
+
+#name{
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 4px;
+    border-radius: 20px;
+
+}
+
+#contact{
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 4px;
+    border-radius: 20px;
+
+}
+#email{
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 4px;
+    border-radius: 20px;
+
+}
+#textareahaha{
+    width: 42vh;
+    border-radius: 20px;
+    height: 35px;
+    margin: 9px;
+    padding: 7px 0 0 3px;
+}
+.contactinfo{
+    font-size: larger;
+    transform: translateY(-50vh);
+    width: 60vh;
+}
+form{
+    margin-left: 5vw;
+
+}
+
+.contactinfo input{
+    margin: 9px;
+    width: 40vh;
+}
+.submityaar{
+    margin: 0 5vh 0 24vh;
+
+
+}
+
+.submityaar input{
+    cursor: pointer;
+    transform: translateY(-48vh);
+    border:2px solid  rgb(213, 88, 10);
+    background-color: transparent;
+    color: #fff;
+    padding: 3px;
+    border-radius: 20px;
+    margin-left: 6px;
+    /* border: 0; */
+    width: 13vh;
+    font-size: large;
+    text-align: center;
+    transition: 0.6s;
+
+}
+.submityaar input:hover{
+    background-color: rgb(213, 88, 10);
+    color: #fff;
+
+}
+footer p{
+    color: #fff;
+    word-spacing: 2px;
+    text-align: start;
+    font-size: large;
+    width: 25vw;
+    margin-top: 5px;
+}
+footer{
+    transform: translateY(-34vh);
+    margin-left: 46vh;
+}
+.linksyaar{
+    
+    color: white;
+    margin-left: 0;
+
+}
+
+.linksyaar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: x-large;
+    cursor: pointer;
+    margin-left: 15px;
+    
+}
+.full{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.114),rgba(0, 0, 0, 0.119)), url(rmorebg.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+    overflow-y: scroll;
+    padding: auto;
+}
+
+
+.discover{
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    color: tan;
+    text-align: center;
+    margin-top: 20vh;
+    font-weight: 200;
+    position: relative;
+}
+.dman{
+    font-family: calibri;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    top: 20px;
+    position: relative;
+    justify-content: center;
+}
+
+.firstp{
+    text-indent: 100px;
+    position: absolute;
+    width: 70%;
+    font-family: calibri;
+    /* display: flex; */
+    top: 65%;
+    /* text-align: center; */
+    /* left: 30vh; */
+    bottom: -20vh;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    background-size: cover;
+    text-align: justify;
+    /* border: 2px solid; */
+    padding: 13px;
+
+}
+.secondp{
+    text-align: justify;
+    background-size: cover;
+    padding: 10px;
+    font-family: calibri;
+    margin-left: 30.5vh;
+    transform: translateY(200%);
+    font-size: 25px;
+    width: 70%;
+
+}
+
+.end{
+    margin-left: 32vh;
+    margin-right: 20vh;
+    font-size: x-large;
+    font-weight: 600;
+    position: absolute;
+    padding: 19px 0px;
+    transform: translateY(310%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+}
+
+.whole{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.114),rgba(0, 0, 0, 0.119)), url(rmorebg.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+    overflow-y: scroll;
+    padding: auto;
+}
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.429);
+    justify-content: space-between;
+    position: fixed; 
+    backdrop-filter: blur(1px);
+}
+.logo{
+    font-family: 'wallpoet';
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.642);
+    margin-left: 40px;
+    font-size: 35px;
+}
+.navbar ul{
+    margin-right: 15%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.632);
+    font-size: 20px;
+    
+}
+.font:hover {
+    border-bottom: 2px solid white;
+    color: rgb(255, 255, 255);
+    /* padding: 5px; */
+    padding-bottom: 5px;
+    /* font-size: 18px; */
+    transition: 0.3s ease;
+}
+.body h1{
+    font-family: 'Great Vibes', cursive;
+    /* position: absolute; */
+    font-weight: 550;
+    font-size: 40px;
+    color: tan;
+    text-align: center;
+    /* transform: translateY(400%); */
+    
+}
+.body h2{
+    font-family: calibri;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    transform: translateY(-35%);
+}
+.body p{
+    font-size: x-large;
+    margin: 1% 10% 0% 10%;
+}
+
+.body{
+    margin-top: 10%;
+}
+table{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.429);
+    width: 28vw;
+    border-collapse: collapse;
+    z-index: 9;
+    margin-top: -18px;
+    margin-left: 5vw;
+}
+table td , th{
+    border: 1px solid white;
+    text-transform: capitalize;
+    font-size: large;
+    padding: 0.3vh 0.7vw;
+
+}
